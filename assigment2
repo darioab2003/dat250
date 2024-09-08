@@ -1,0 +1,46 @@
+# DAT250: Software Technology Experiment Assignment 2
+
+## Introduction
+
+The goal of this assignment is to implement a simple REST API for a Poll application using Spring Boot. This will serve as the foundation for a future software project.
+
+## Setup
+
+### Project Configuration
+
+- Spring Boot version: 2.5.4
+- Dependencies: Spring Web, Spring Data JPA, H2 Database
+
+### Domain Models
+
+The domain models include `User`, `Poll`, `VoteOption`, and `Vote`, with the following relationships:
+- A `User` can create multiple `Polls`.
+- A `Poll` has multiple `VoteOptions`.
+- A `Vote` is associated with a single `VoteOption` and a `User`.
+
+### Controllers
+
+Implemented CRUD operations for all domain models:
+- `UserController`: Handles operations for `User`.
+- `PollController`: Handles operations for `Poll`.
+- `VoteOptionController`: Handles operations for `VoteOption`.
+- `VoteController`: Handles operations for `Vote`.
+
+## Technical Issues and Solutions
+
+- **Serialization Cycles**: Managed using `@JsonIgnore` and `@JsonManagedReference`.
+- **Validation**: Added validation annotations to ensure data integrity.
+- **Error Handling**: Implemented global exception handler to provide user-friendly error responses.
+
+## Remaining Issues
+
+- Further testing is needed to ensure robustness.
+- Additional validation and business logic can be implemented for better data integrity.
+
+## Conclusion
+
+The project lays a solid foundation for a Poll application with a REST API. Future improvements include more comprehensive testing, additional validation, and enhanced error handling.
+
+## Links
+
+- [GitHub Repository](URL_to_your_github_repository)
