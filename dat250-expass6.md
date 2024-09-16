@@ -26,6 +26,5 @@ For this assignment, the following tasks were performed:
 - Currently, there are no unresolved issues. The frontend and backend integration has been completed successfully, and all functionalities have been tested.
 
 ## Code Links
+https://drive.google.com/drive/folders/18PUvj2F0fup7oNpNswL51MIm3cCj3cnn
 
-- [Backend Code](link-to-backend-code)
-- [Frontend Code](link-to-frontend-code)
