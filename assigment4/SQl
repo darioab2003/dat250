@@ -1,0 +1,175 @@
+Hibernate: 
+    insert 
+    into
+        Bank
+        (name, id) 
+    values
+        (?, default)
+
+Hibernate: 
+    insert 
+    into
+        CreditCard
+        (balance, bank_id, credit_limit, number, pincode_id, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+
+Hibernate: 
+    insert 
+    into
+        CreditCard
+        (balance, bank_id, credit_limit, number, pincode_id, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+
+Hibernate: 
+    insert 
+    into
+        Pincode
+        (count, pincode, id) 
+    values
+        (?, ?, default)
+
+Hibernate: 
+    insert 
+    into
+        Address
+        (number, street, id) 
+    values
+        (?, ?, default)
+
+Hibernate: 
+    insert 
+    into
+        Customer
+        (name, id) 
+    values
+        (?, default)
+
+Hibernate: 
+    update
+        CreditCard 
+    set
+        balance=?,
+        bank_id=?,
+        credit_limit=?,
+        number=?,
+        pincode_id=? 
+    where
+        id=?
+
+Hibernate: 
+    update
+        CreditCard 
+    set
+        balance=?,
+        bank_id=?,
+        credit_limit=?,
+        number=?,
+        pincode_id=? 
+    where
+        id=?
+
+Hibernate: 
+    insert 
+    into
+        customer_address
+        (customer_id, address_id) 
+    values
+        (?, ?)
+
+Hibernate: 
+    insert 
+    into
+        customer_creditcard
+        (customer_id, creditcard_id) 
+    values
+        (?, ?)
+
+Hibernate: 
+    insert 
+    into
+        customer_creditcard
+        (customer_id, creditcard_id) 
+    values
+        (?, ?)
+
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.name 
+    from
+        Customer c1_0 
+    where
+        c1_0.id=?
+
+Hibernate: 
+    select
+        a1_0.customer_id,
+        a1_1.id,
+        a1_1.number,
+        a1_1.street 
+    from
+        customer_address a1_0 
+    join
+        Address a1_1 
+            on a1_1.id=a1_0.address_id 
+    where
+        a1_0.customer_id=?
+
+Hibernate: 
+    select
+        c1_0.address_id,
+        c1_1.id,
+        c1_1.name 
+    from
+        customer_address c1_0 
+    join
+        Customer c1_1 
+            on c1_1.id=c1_0.customer_id 
+    where
+        c1_0.address_id=?
+
+Hibernate: 
+    select
+        cc1_0.customer_id,
+        cc1_1.id,
+        cc1_1.balance,
+        b1_0.id,
+        b1_0.name,
+        cc1_1.credit_limit,
+        cc1_1.number,
+        p1_0.id,
+        p1_0.count,
+        p1_0.pincode 
+    from
+        customer_creditcard cc1_0 
+    join
+        CreditCard cc1_1 
+            on cc1_1.id=cc1_0.creditcard_id 
+    left join
+        Bank b1_0 
+            on b1_0.id=cc1_1.bank_id 
+    left join
+        Pincode p1_0 
+            on p1_0.id=cc1_1.pincode_id 
+    where
+        cc1_0.customer_id=?
+
+Hibernate: 
+    select
+        ccl1_0.bank_id,
+        ccl1_0.id,
+        ccl1_0.balance,
+        ccl1_0.credit_limit,
+        ccl1_0.number,
+        p1_0.id,
+        p1_0.count,
+        p1_0.pincode 
+    from
+        CreditCard ccl1_0 
+    left join
+        Pincode p1_0 
+            on p1_0.id=ccl1_0.pincode_id 
+    where
+        ccl1_0.bank_id=?
