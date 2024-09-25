@@ -70,8 +70,6 @@ For the additional operation, I created a Map-Reduce function that counts the oc
 ### Why Map-Reduce is Useful
 The Map-Reduce operation is useful because it allows for the efficient processing and aggregation of large data sets. By breaking down tasks into smaller "map" operations and then combining the results through "reduce" operations, MongoDB can handle large-scale data analysis more effectively than performing individual queries.
 
-The resulting collection from my Map-Reduce function provided insights into word frequency, which could be applied in various real-world scenarios, such as analyzing user comments, reviews, or any text-based data.
-
 ## Pending Issues
 
 There are no unresolved issues related to this task. All operations were completed successfully without any errors.
