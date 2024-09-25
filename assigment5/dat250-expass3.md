@@ -52,6 +52,7 @@ Insert many and delete many:
 
 ### 5. Bulk Write Operations
 The `bulkWrite()` function was used to perform multiple write operations in a single call, including insertions, updates, deletions, and replacements.
+![Insert_many_bulkwrite](https://github.com/user-attachments/assets/0fd1d273-7c3c-497d-a17d-d8d45fc99025)
 
 
 ## Experiment 2: Aggregation - Map-Reduce
@@ -59,7 +60,9 @@ The `bulkWrite()` function was used to perform multiple write operations in a si
 For this experiment, I explored the Map-Reduce aggregation feature in MongoDB. Map-Reduce is useful for processing large data sets and aggregating the results efficiently.
 
 ### Screenshot: Map-Reduce Example
-*Insert screenshot of the Map-Reduce example here*
+![experimento2](https://github.com/user-attachments/assets/3a70d5dc-e8e9-423e-bb60-99a96ed36e23)
+
+![Experiment2_result](https://github.com/user-attachments/assets/d1ae3cab-b11a-41c1-ad6f-23624164d44d)
 
 ### Additional Operation Developed
 For the additional operation, I created a Map-Reduce function that counts the occurrences of specific words within a collection of text documents. The results show the frequency of each word.
