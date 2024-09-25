@@ -64,9 +64,6 @@ For this experiment, I explored the Map-Reduce aggregation feature in MongoDB. M
 
 ![Experiment2_result](https://github.com/user-attachments/assets/d1ae3cab-b11a-41c1-ad6f-23624164d44d)
 
-### Additional Operation Developed
-For the additional operation, I created a Map-Reduce function that counts the occurrences of specific words within a collection of text documents. The results show the frequency of each word.
-
 ### Why Map-Reduce is Useful
 The Map-Reduce operation is useful because it allows for the efficient processing and aggregation of large data sets. By breaking down tasks into smaller "map" operations and then combining the results through "reduce" operations, MongoDB can handle large-scale data analysis more effectively than performing individual queries.
 
