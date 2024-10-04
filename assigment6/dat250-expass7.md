@@ -18,7 +18,7 @@ experiment1:
 https://github.com/darioab2003/dat250/blob/main/assigment6/experiment1.md
 
 experiment2:
-
+https://github.com/darioab2003/dat250/blob/main/assigment6/experiment2.md
 
 ## Unresolved Issues
 
