@@ -80,11 +80,11 @@ public class Recv {
 
 Dependencies Added
 To support the RabbitMQ functionality, the following dependencies were added to the project:
-
+````
 implementation ("com.rabbitmq:amqp-client:5.16.0")
 implementation ("org.slf4j:slf4j-api:1.7.36")
 implementation ("org.slf4j:slf4j-simple:1.7.36")
-
+````
 
 
 Run the Send class in another terminal to send a message:
