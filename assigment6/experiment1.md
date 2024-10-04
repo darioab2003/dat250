@@ -19,5 +19,9 @@ This command started the RabbitMQ server with the management plugin enabled, and
 
 ```bash
 sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
+````
 
+This command started the RabbitMQ server with the management plugin enabled, and it executed correctly, as shown in the attached image.
+
+![Captura de pantalla 2024-10-04 180606](https://github.com/user-attachments/assets/4326f777-019e-4803-8bcf-4ac6ba217d57)
 
