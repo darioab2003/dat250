@@ -86,11 +86,12 @@ implementation ("org.slf4j:slf4j-api:1.7.36")
 implementation ("org.slf4j:slf4j-simple:1.7.36")
 
 
-Run the Recv class in one terminal to start listening for messages:
+
+Run the Send class in another terminal to send a message:
 ![Captura de pantalla 2024-10-04 182627](https://github.com/user-attachments/assets/d4d70eca-b292-4efc-b83c-6c572d968143)
 
 
-Run the Send class in another terminal to send a message:
+Run the Recv class in one terminal to start listening for messages:
 
 ![Captura de pantalla 2024-10-04 182808](https://github.com/user-attachments/assets/b2b09af9-028f-4766-b63c-0d594020a90e)
 
