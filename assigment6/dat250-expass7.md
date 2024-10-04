@@ -14,7 +14,8 @@ During the completion of the RabbitMQ "Hello World" tutorial, I encountered seve
 
 The source code for all experiments, including the "Hello World" RabbitMQ tutorial, can be found at the following link:
 
-[GitHub Repository - Experiment 1 to 4](https://github.com/your-repo-link)
+experiment1:
+
 
 ## Unresolved Issues
 
