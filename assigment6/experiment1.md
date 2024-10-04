@@ -15,8 +15,11 @@ During the setup and execution of RabbitMQ for the "Hello World" tutorial, I enc
 
 
 After successfully installing Docker, I was able to run RabbitMQ using the following command:
+This command started the RabbitMQ server with the management plugin enabled, and it executed correctly, as shown in the attached image.
 
 ```bash
 sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
 
+
 This command started the RabbitMQ server with the management plugin enabled, and it executed correctly, as shown in the attached image.
+
