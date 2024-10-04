@@ -88,7 +88,9 @@ implementation ("org.slf4j:slf4j-simple:1.7.36")
 
 
 Run the Send class in another terminal to send a message:
+
 ![Captura de pantalla 2024-10-04 182627](https://github.com/user-attachments/assets/d4d70eca-b292-4efc-b83c-6c572d968143)
+
 
 
 Run the Recv class in one terminal to start listening for messages:
