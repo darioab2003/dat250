@@ -14,11 +14,18 @@ During the completion of the RabbitMQ "Hello World" tutorial, I encountered seve
 
 The source code for all experiments, including the "Hello World" RabbitMQ tutorial, can be found at the following link:
 
-experiment1:
+experiment 1:
 https://github.com/darioab2003/dat250/blob/main/assigment6/experiment1.md
 
-experiment2:
+experiment 2:
 https://github.com/darioab2003/dat250/blob/main/assigment6/experiment2.md
+
+experiment 3:
+https://github.com/darioab2003/dat250/blob/main/assigment6/experiment3.md
+
+experiment 4:
+
+
 
 ## Unresolved Issues
 
