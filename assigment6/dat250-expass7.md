@@ -1,4 +1,4 @@
-# DAT250 Experiment 7 Report
+# DAT250 Experiment 6 Report
 
 ## Technical Issues Encountered
 
