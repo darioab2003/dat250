@@ -32,7 +32,7 @@ and the result was:
 ![Captura de pantalla 2024-10-07 171652](https://github.com/user-attachments/assets/902d6a04-9a6c-4c43-9388-9c0a8cee02a9)
 
 
-##Step 2: Connecting to the Database
+## Step 2: Connecting to the Database
 
 After that, I executed the following command to inspect the startup logs of the PostgreSQL process:
 
@@ -50,7 +50,7 @@ After that, I opened my project of the assigment 4 in IntelliJ and connected to 
 
 ![Captura de pantalla 2024-10-09 121337](https://github.com/user-attachments/assets/4ee8c763-5881-4f26-b6de-1ca912359263)
 
-##Step 3: Modifying persistence.xml
+## Step 3: Modifying persistence.xml
 
 Next, I modified the persistence.xml file by replacing the old connection parameters that were used for H2 with the PostgreSQL connection. The previous configuration looked like this:
 
@@ -70,7 +70,7 @@ I updated it to the following PostgreSQL configuration:
 <property name="hibernate.connection.password" value="secret"/>
 ````
 
-##Step 4: Testing
+## Step 4: Testing
 I attempted to run my tests, but they failed. I will add a screenshot of the error message.
 
 ![Captura de pantalla 2024-10-09 113946](https://github.com/user-attachments/assets/683e63a6-d386-49e4-9439-4e41485d2cd7)
@@ -80,12 +80,12 @@ This configuration generated the files schema.up.sql and schema.down.sql, where 
 ![Captura de pantalla 2024-10-07 183616](https://github.com/user-attachments/assets/b6b14dc1-28a6-4505-a158-67dd7eed78ff)
 
 
-##Step 5: Executing the SQL Scripts
+## Step 5: Executing the SQL Scripts
 Next, I executed the CREATE statements in the database console, as seen in the console output.
 
 ![Captura de pantalla 2024-10-09 224019](https://github.com/user-attachments/assets/74bed40b-d448-4200-a2ea-77ab602d2e52)
 
-##Step 6: Testing
+## Step 6: Testing
 After running the tests again, everything worked correctly.
 
 ![Captura de pantalla 2024-10-09 191840](https://github.com/user-attachments/assets/783674d9-1f5e-4d1d-a1ba-a58284a6e4f9)
