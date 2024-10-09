@@ -1,3 +1,8 @@
+# Assignment 7
+
+## Introduction
+In this assignment, I focused on containerizing a Spring Boot application with PostgreSQL using Docker. I installed the PostgreSQL Docker image, configured the application to connect to the database, and documented the challenges and solutions encountered throughout the process. This report outlines the steps taken during the assignment, emphasizing key configurations and issues resolved.
+
 ## Step 1: Installing PostgreSQL Docker Image
 The first thing I did was install the PostgreSQL Docker image using the following command:
 
