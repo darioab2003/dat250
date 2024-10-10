@@ -92,11 +92,62 @@ After running the tests again, everything worked correctly.
 
 
 
+# Building you own dockerized application
+
+In this task, we aimed to containerize our Spring Boot application from Assignment 3. The goal was to package the application into a Docker image, making it easier to distribute and run.
+
+## Step 1: Setting Up the Dockerfile
+We started by opening the project from Assignment 3 and creating a new Dockerfile. Below is the content of the Dockerfile that we included:
+
+````java
+FROM eclipse-temurin:21-jdk AS build 
+
+WORKDIR /app
+
+COPY . .
+
+RUN ./gradlew bootJar
+
+FROM eclipse-temurin:21-jre-alpine 
+
+WORKDIR /app
+
+COPY --from=build /app/build/libs/*.jar app.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "app.jar"]
+
+````
+
+![hoba](https://github.com/user-attachments/assets/e0e79fd0-8403-4898-bcb3-1f6aa7c66c70)
 
 
+## Step 2: Building the Docker Image
+Once the Dockerfile was set up, the next step was to build the Docker image. We ran the following command to do this:
+
+````java
+docker build -t my-spring-boot-app .
+````
+
+## Step 3: Running the Docker Container
+After successfully building the image, we ran the application using the following command:
+
+````java
+docker run -p 8080:8080 my-spring-boot-app
+````
+
+This allowed the Spring Boot application to run in a Docker container, making it accessible on port 8080.
+
+## Step 4: Testing the Application
+
+To verify the application is working correctly, we conducted a test using a web browser (Bruno in this case) by accessing the application at http://localhost:8080. The test confirmed that the Spring Boot application was running as expected, as shown in the image below:
 
 
+![3](https://github.com/user-attachments/assets/3d21ce34-8a6d-4756-9d22-bbd11ff4c75a)
 
+
+![Captura de pantalla 2024-10-10 122806](https://github.com/user-attachments/assets/c6f2732f-bc16-417e-866b-0910148e7082)
 
 
 
