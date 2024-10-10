@@ -92,7 +92,7 @@ After running the tests again, everything worked correctly.
 
 
 
-# Building you own dockerized application
+# Building your own dockerized application
 
 In this task, we aimed to containerize our Spring Boot application from Assignment 3. The goal was to package the application into a Docker image, making it easier to distribute and run.
 
