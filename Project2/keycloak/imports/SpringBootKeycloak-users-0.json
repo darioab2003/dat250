@@ -1,0 +1,56 @@
+{
+  "realm" : "SpringBootKeycloak",
+  "users" : [ {
+    "id" : "981082e5-0ac8-44e6-b614-b870c2948039",
+    "username" : "admin_user",
+    "firstName" : "Berit",
+    "lastName" : "Jørgensen",
+    "email" : "berit@email.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1727667557500,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "de4cbfa8-dc2d-412d-af95-de150cb78ab5",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1727667580846,
+      "secretData" : "{\"value\":\"MazRJqcqvXmRHkJrcIyd35dEEptfid3BnY1DpyVXTj0=\",\"salt\":\"1QQN25/4Px5aJS/Pog/aFQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "USER", "ADMIN" ],
+    "clientConsents" : [ {
+      "clientId" : "order-client",
+      "grantedClientScopes" : [ "email", "phone", "roles", "order-client", "profile" ],
+      "createdDate" : 1727669639345,
+      "lastUpdatedDate" : 1727669639417
+    } ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "58198df7-9188-415a-8412-d3d7889df6e1",
+    "username" : "user",
+    "firstName" : "Robert",
+    "lastName" : "Isak",
+    "email" : "robert@email.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1727667489023,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fe13593e-fcaf-4c68-9a84-4fdea146bacf",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1727667528515,
+      "secretData" : "{\"value\":\"YodTCyRYAoOZ6x0ow0H9graEVD+IInnUPz5Cq4jqRTY=\",\"salt\":\"66rn4ORBk2j/lXSMzv0Rrg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "USER" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
